@@ -6,7 +6,6 @@ package de.mpicbg.jug.plugins;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.Image;
 import java.util.List;
 
 import javax.swing.JFrame;
@@ -77,8 +76,6 @@ public class TutorialPlugin2< T extends RealType< T > & NativeType< T >> impleme
 					windowWidth,
 					windowHeight );
 
-			final Image finalicon = GenericClearVolumeGui.getCurrentAppIcon();
-
 			final ClearVolumeSplashFrame loadFrame = new ClearVolumeSplashFrame();
 
 			panelGui = new GenericClearVolumeGui< T >( imgPlus, luts, textureResolution, false );
@@ -86,8 +83,6 @@ public class TutorialPlugin2< T extends RealType< T > & NativeType< T >> impleme
 			frame.setVisible( true );
 
 			loadFrame.dispose();
-
-			GenericClearVolumeGui.setCurrentAppIcon( finalicon );
 		}
 	}
 
