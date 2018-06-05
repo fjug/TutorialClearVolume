@@ -24,6 +24,7 @@ import net.imglib2.type.numeric.RealType;
 /**
  * Plugin that opens the active image using the
  * <code>GenericClearVolumeGui</code>.
+ * Sets the UI programmatically.
  *
  * @author jug
  */

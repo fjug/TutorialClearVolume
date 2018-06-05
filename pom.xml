@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.scijava</groupId>
 		<artifactId>pom-scijava</artifactId>
-		<version>16.1.0</version>
+		<version>22.3.0</version>
 		<relativePath />
 	</parent>
 
@@ -14,7 +14,7 @@
 	<version>1.0.0</version>
 
 	<name>ClearVolume tutorial</name>
-	<description>Plugins made for Learnathon 2017.</description>
+	<description>Plugins made for Learnathon 2017, updated for 2018.</description>
 	<url>https://imagej.net/ClearVolume</url>
 	<inceptionYear>2017</inceptionYear>
 	<organization>
@@ -52,14 +52,13 @@
 			</roles>
 		</developer>
 	</developers>
-<!-- 	<contributors>
+
+ 	<contributors>
  		<contributor>
-			<name>John Doe</name>
-			<properties><id>jdoe</id></properties>
+			<name>none</name>
 		</contributor>
-		<contributor>
 	</contributors>
- -->
+
 	<scm>
 		<connection>scm:git:git://github.com/ClearVolume/imglib2-clearvolume</connection>
 		<developerConnection>scm:git:git@github.com:ClearVolume/imglib2-clearvolume</developerConnection>
@@ -144,11 +143,6 @@ Cell Biology and Genetics.</license.copyrightOwners>
 
 		<!-- ClearVolume dependencies -->
 		<dependency>
-			<groupId>sc.fiji</groupId>
-			<artifactId>imglib-clearvolume</artifactId>
-			<version>1.3.21-SNAPSHOT</version>
-		</dependency>
-		<dependency>
 			<groupId>net.clearvolume</groupId>
 			<artifactId>clearvolume</artifactId>
 			<version>${clearvolume.version}</version>
@@ -162,19 +156,11 @@ Cell Biology and Genetics.</license.copyrightOwners>
 		<dependency>
 			<groupId>net.coremem</groupId>
 			<artifactId>CoreMem</artifactId>
-			<version>${CoreMem.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>net.clearvolume</groupId>
-			<artifactId>clearcl</artifactId>
-			<version>${clearcl.version}</version>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.clearvolume</groupId>
-			<artifactId>cleargl</artifactId>
-			<version>${cleargl.version}</version>
-			<scope>runtime</scope>
+			<groupId>sc.fiji</groupId>
+			<artifactId>imglib-clearvolume</artifactId>
+			<version>1.3.21-SNAPSHOT</version>
 		</dependency>
 
 		<!-- Test scope dependencies -->

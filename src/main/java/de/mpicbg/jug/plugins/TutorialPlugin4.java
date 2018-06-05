@@ -27,7 +27,9 @@ import net.imglib2.view.Views;
 /**
  * Plugin that opens the active image using the
  * <code>GenericClearVolumeGui</code>.
- *
+ * Here we include only a clearvolume jogl window without the generic UI around
+ * it...
+ * 
  * @author jug
  */
 @Plugin( menu = { @Menu( label = "Tutorials" ),
