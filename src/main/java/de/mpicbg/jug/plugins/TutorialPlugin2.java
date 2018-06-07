@@ -39,10 +39,10 @@ public class TutorialPlugin2< T extends RealType< T > & NativeType< T >> impleme
 
 	private ImgPlus< T > imgPlus;
 
-	private final int windowWidth = 1200;
-	private final int windowHeight = 900;
+	private final int windowWidth = 1024;
+	private final int windowHeight = 768;
 
-	@Parameter( label = "Max texture size", min = "16", max = "3840", stepSize = "100", columns = 5, description = "Max texture resolution (per axis)." )
+	@Parameter( label = "Max texture size", min = "16", max = "3840", stepSize = "100", description = "Max texture resolution (per axis)." )
 	private int textureResolution = 2048;
 
 	private JFrame frame;
