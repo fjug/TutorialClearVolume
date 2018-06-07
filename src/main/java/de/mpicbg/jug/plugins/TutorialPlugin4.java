@@ -11,7 +11,6 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 import org.scijava.command.Command;
-import org.scijava.plugin.Menu;
 import org.scijava.plugin.Parameter;
 import org.scijava.plugin.Plugin;
 
@@ -29,12 +28,10 @@ import net.imglib2.view.Views;
  * <code>GenericClearVolumeGui</code>.
  * Here we include only a clearvolume jogl window without the generic UI around
  * it...
- * 
+ *
  * @author jug
  */
-@Plugin( menu = { @Menu( label = "Tutorials" ),
-				  @Menu( label = "ClearVolume" ),
-				  @Menu( label = "Tutorial Plugin 4" ) }, description = "Without GenericClearVolumeGui.", headless = false, type = Command.class )
+@Plugin( menuPath = "Tutorials>ClearVolume>Tutorial Plugin 4", description = "Without GenericClearVolumeGui.", headless = false, type = Command.class )
 public class TutorialPlugin4< T extends RealType< T > & NativeType< T >> implements Command {
 
 	@Parameter( label = "3D ImgPlus to be shown." )
